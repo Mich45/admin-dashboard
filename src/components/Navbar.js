@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <>
-      <nav className="flex justify-between items-center bg-gray-800 px-4 py-2">
+      <nav className="flex justify-between items-center px-4 py-2">
         <div className="flex-grow">
           <input
             type="text"
