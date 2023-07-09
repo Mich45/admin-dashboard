@@ -1,11 +1,10 @@
-// import { LineChart, Line } from 'recharts';
 import AreaChartPlot from './AreaChartPlot';
 import BarChartPlot from './BarChartPlot';
 import PieChartPlot from './PieChartPlot';
 import LineChartPlot from './LineChartPlot';
 import RadarChartPlot from './RadarChartPlot';
 
-const Chart = () => {
+const Charts = () => {
     return (
     <>
     <section>
@@ -61,4 +60,4 @@ const Chart = () => {
 )
 }
 
-export default Chart
+export default Charts

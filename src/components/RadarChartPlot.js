@@ -1,6 +1,7 @@
 'use client'
 import {
     RadarChart,
+    Radar,
     PolarAngleAxis,
     PolarRadiusAxis,
     PolarGrid,
@@ -49,7 +50,7 @@ const RadarChartPlot = () => {
             "fullMark": 150
         }
     ];
-    
+
     return (
         <>
         <ResponsiveContainer width="100%" height="100%">
