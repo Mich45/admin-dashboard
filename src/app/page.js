@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import Chart from '../components/Chart'
@@ -8,7 +7,7 @@ export default function Home() {
     <>
     <div className="flex">
     <Sidebar/>
-    <main className="flex-grow ml-64 relative">
+    <main className="flex-grow ml-64  overflow-x-auto relative">
           <Navbar />
           <Chart/>
     </main>
