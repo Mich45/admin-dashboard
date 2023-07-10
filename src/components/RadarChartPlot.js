@@ -3,7 +3,6 @@ import {
     RadarChart,
     Radar,
     PolarAngleAxis,
-    PolarRadiusAxis,
     PolarGrid,
     Legend,
     Tooltip,
@@ -45,7 +44,6 @@ const RadarChartPlot = () => {
         <RadarChart outerRadius={90} width={730} height={250} data={data}>
   <PolarGrid />
   <PolarAngleAxis dataKey="day" />
-  <PolarRadiusAxis angle={30} domain={[0, 150]} />
   <Radar name="Orders" dataKey="amount" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6} />
                     <Legend />
                     <Tooltip/>
