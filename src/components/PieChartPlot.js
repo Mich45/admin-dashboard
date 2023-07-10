@@ -1,5 +1,3 @@
-"use client";
-
 import { PieChart, Pie, Tooltip, ResponsiveContainer } from "recharts";
 
 const PieChartPlot = () => {
