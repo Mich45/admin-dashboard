@@ -13,46 +13,39 @@ import {
 const BarChartPlot = () => {
   const data = [
     {
-      name: "Page A",
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
+        name: "Jan",
+        high: 4000,
+        low: 2400
     },
     {
-      name: "Page B",
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
+        name: "Feb",
+        high: 5000,
+        low: 1500
     },
     {
-      name: "Page C",
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
+        name: "Mar",
+        high: 6000,
+        low: 3000
     },
     {
-      name: "Page D",
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
+        name: "Apr",
+        high: 6500,
+        low: 4500
     },
     {
-      name: "Page E",
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
+        name: "May",
+        high: 7000,
+        low: 2200
     },
     {
-      name: "Page F",
-      uv: 2390,
-      pv: 3800,
-      amt: 2500,
+        name: "Jun",
+        high: 8000,
+        low: 3500
     },
     {
-      name: "Page G",
-      uv: 3490,
-      pv: 4300,
-      amt: 2100,
+        name: "Jul",
+        high: 7400,
+        low: 5500
     },
   ];
   return (
@@ -63,8 +56,8 @@ const BarChartPlot = () => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="pv" fill="#8884d8" />
-          <Bar dataKey="uv" fill="#82ca9d" />
+          <Bar dataKey="high" fill="#82ca9d" />
+          <Bar dataKey="low" fill="#FA8072" />
         </BarChart>
       </ResponsiveContainer>
     </>

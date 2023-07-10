@@ -5,28 +5,28 @@ import { PieChart, Pie, Tooltip, ResponsiveContainer } from "recharts";
 const PieChartPlot = () => {
   const data01 = [
     {
-      name: "Group A",
-      value: 400,
+      name: "Twitter",
+      value: 200400,
     },
     {
-      name: "Group B",
-      value: 300,
+      name: "Facebook",
+      value: 205000,
     },
     {
-      name: "Group C",
-      value: 300,
+      name: "Instagram",
+      value: 23400,
     },
     {
-      name: "Group D",
-      value: 200,
+      name: "Snapchat",
+      value: 20000,
     },
     {
-      name: "Group E",
-      value: 278,
+      name: "LinkedIn",
+      value: 29078,
     },
     {
-      name: "Group F",
-      value: 189,
+      name: "YouTube",
+      value: 18900,
     },
   ];
  
@@ -41,8 +41,8 @@ const PieChartPlot = () => {
             cx="50%"
             cy="50%"
             outerRadius={80}
-                      fill="#8884d8"
-                      label
+            fill="#8884d8"
+            label
           />
           <Tooltip/>
         </PieChart>
