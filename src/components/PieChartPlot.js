@@ -1,7 +1,7 @@
-import { PieChart, Pie, Tooltip, ResponsiveContainer } from "recharts";
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 
 const PieChartPlot = () => {
-  const data01 = [
+  const data = [
     {
       name: "Twitter",
       value: 200400,
@@ -27,22 +27,34 @@ const PieChartPlot = () => {
       value: 18900,
     },
   ];
- 
+
+  const colors = [
+    "#8884d8",
+    "#FA8072",
+    "#AF69EE",
+    "#3DED97",
+    "#3AC7EB",
+    "#F9A603",
+  ];
+
   return (
     <>
       <ResponsiveContainer width="100%" height="100%">
         <PieChart width={730} height={250}>
           <Pie
-            data={data01}
+            data={data}
             dataKey="value"
             nameKey="name"
             cx="50%"
             cy="50%"
-            outerRadius={80}
             fill="#8884d8"
             label
-          />
-          <Tooltip/>
+          >
+            {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={colors[index]} />
+            ))}
+          </Pie>
+          <Tooltip />
         </PieChart>
       </ResponsiveContainer>
     </>
